@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/head", { title: "Rock Paper Scissors", href: "/assets/game.css"}); %>
+
+<body>
+    <section>
+    <%- include ("partials/navbar"); %>
+
+<div class= "PlayerCompChoices mt-5" >
+    
+    <div class = "row">
+        <div class = "col-5">
+            <h2>Player 1</h2>
+            <div class="container">
+                <div id="player-choices" class="choices hover-large">
+                    <div class="container">
+                        <div id="bingkairock" class="bingkai  mx-auto rounded ">
+                                <img id= "rock"class="icon  pilihan "  src="/img/batu.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="bingkaipaper" class="bingkai  mx-auto rounded ">
+                                <img id = "paper"class="icon  pilihan"  src="/img/kertas.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="bingkaiscissors" class="bingkai  mx-auto rounded">
+                                <img id="scissors" class="icon  pilihan" src="/img/gunting.png">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class= "col-2 ">
+            <div id="papantengah" class="container vsHome ">
+                    <h1>VS</h1>
+            </div>
+        </div>
+
+  
+        <div class = "col-5">
+            <h2>COM</h2>
+            <div class="container">
+            <div id="comp-choices" class="choices">
+                <div class="container">
+                    <div id="bingkairockAI" class="bingkai  mx-auto rounded">
+                            <img id="rockAI" class="icon   pilihanAI"  src="/img/batu.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id= "bingkaipaperAI" class="bingkai  mx-auto rounded">
+                            <img id="paperAI"class="icon   pilihanAI"  src="/img/kertas.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="bingkaiscissorsAI" class="bingkai mx-auto rounded">
+                            <img id="scissorsAI" class="icon   pilihanAI"  src="/img/gunting.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+              <div class = "row">
+                  <div class = "col">
+                    <div class = "reset">
+                        <div id ="reset" class = "reset">
+                            <img id="restartbutton" onClick="window.location.reload();" class = "reset1"width="48" height="48" src="/img/refresh.png">
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+    
+    
+</div>
+</section>
+
+<script src="/assets/game.js" type="text/javascript"></script>
+</body>
+
+</html>

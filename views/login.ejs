@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/head", { title: "Login", href: "/assets/login.css" }); %>
+<body>
+    <%- include ("partials/navbar"); %>
+    <div>
+        <h2>
+            kalau mau masuk gunakan username: admin
+            <hr>
+            password: admin
+        </h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="username"/>
+            <input type="text" name="password" placeholder="password"/>
+            <button>Go</button>
+        </form>
+    </div>
+</body>
+</html>
